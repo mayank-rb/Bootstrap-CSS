@@ -1,0 +1,148 @@
+.modal.modal-custom-inv {
+    --bs-modal-width: 1140px;
+    --bs-modal-padding: 20px;
+    --bs-modal-header-padding: 20px 20px 14px;
+    --bs-modal-bg: var(--lightGrey);
+    --bs-modal-border-radius: 12px;
+    --bs-modal-header-border-color: transparent;
+}
+
+.modal-custom .modal-header .btn-close {
+    margin: 0 0 0 auto;
+    background: transparent;
+    padding: 1px 0 0 1px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--blackColor);
+    opacity: 1;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.8s;
+}
+
+.modal-custom .modal-header .btn-close:hover {
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.modal.modal-custom-inv .modal-content {
+    border: none;
+}
+
+.invest-pop-root {
+    padding: 0 40px 60px 60px;
+    position: relative;
+}
+
+.invest-cnt-div h5 {
+    background: linear-gradient(239deg, var(--primaryColor02) -16.33%, var(--primaryColor03) 96.37%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.invest-cnt-div h3 {
+    font-weight: 400;
+    line-height: 55px;
+    margin-bottom: 24px;
+    color: var(--blackColor);
+}
+
+.invest-cnt-div h3 b {
+    font-weight: 600;
+}
+
+.invest-cnt-div .desc-dv {
+    margin-bottom: 55px;
+}
+
+.invest-cnt-form {
+    margin-left: auto;
+    max-width: 457px;
+}
+
+@media (max-width:1200px) {
+    .modal.modal-custom-inv {
+        --bs-modal-width: 992px;
+    }
+
+    .invest-pop-root {
+        padding: 0 20px 40px 20px;
+    }
+
+    .invest-cnt-div h3 {
+        line-height: 48px;
+    }
+
+    body .invest-cnt-div p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:992px) {
+    .modal.modal-custom-inv {
+        --bs-modal-width: 700px;
+        --bs-modal-header-padding: 20px 20px 10px;
+    }
+
+    .invest-pop-root {
+        padding: 0 5px 20px 5px;
+    }
+
+    .invest-cnt-div h3 {
+        line-height: 42px;
+    }
+
+    .invest-cnt-div .info-super-dv {
+        font-size: 14px;
+        column-gap: 8px;
+    }
+
+    .invest-cnt-div .info-super-dv .info-super-ico {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:767px) {
+    .modal.modal-custom-inv {
+        --bs-modal-width: 100%;
+        --bs-modal-padding: 15px;
+    }
+
+    .invest-cnt-div h3 {
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    body .invest-cnt-div p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    body .invest-cnt-div .desc-dv {
+        margin-bottom: 30px;
+    }
+
+    body .invest-cnt-div {
+        margin-bottom: 40px;
+        min-height: auto;
+    }
+
+    .invest-pop-root {
+        padding: 0 5px 5px 5px;
+    }
+
+    .invest-cnt-form {
+        max-width: 100%;
+    }
+}

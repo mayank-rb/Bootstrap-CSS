@@ -1,0 +1,300 @@
+/* Invest in HireHost */
+
+.invest-hirehost-section {
+    --h88: 88px;
+    position: relative;
+    background-color: var(--whiteColor);
+    padding-top: var(--h88);
+}
+
+.invest-hirehost-section::before {
+    content: "";
+    background: linear-gradient(224deg, var(--primaryColor03) 11.65%, var(--primaryColor02) 89.63%);
+    width: 100%;
+    height: calc(100% - var(--h88));
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.invest-content-inner {
+    position: relative;
+}
+
+.invest-content-dv {
+    padding: 65px 0;
+    margin: 0;
+    position: relative;
+    min-height: 370px;
+    color: var(--whiteColor);
+}
+
+.invest-content-dv h3 {
+    margin: 0 0 24px;
+    font-weight: 400;
+}
+
+.invest-content-dv h3 b {
+    font-weight: 600;
+}
+
+.invest-content-dv .desc-dv {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.invest-content-dv .desc-dv p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.row.invest-row {
+    --bs-gutter-x: 24px;
+}
+
+.invest-img-root {
+    height: 467px;
+    width: 762px;
+    position: relative;
+    display: block;
+    top: -88px;
+    margin: 0 0 -88px 0;
+}
+
+.invest-img-dv {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='763' height='468' viewBox='0 0 763 468' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M730.952 468H0L179.611 141.519C179.611 141.519 343.212 -99.3347 610.877 47.3817C741.247 118.842 806.498 310.77 730.952 468Z' fill='black'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg width='763' height='468' viewBox='0 0 763 468' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M730.952 468H0L179.611 141.519C179.611 141.519 343.212 -99.3347 610.877 47.3817C741.247 118.842 806.498 310.77 730.952 468Z' fill='black'/%3E%3C/svg%3E");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: bottom;
+    mask-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.invest-img-dv .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    animation: imgZoom 8s linear infinite;
+    transition: all 0.8s;
+}
+
+@keyframes imgZoom {
+    0% {
+        transform: scale(1.05);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.light-grey-bg {
+    background-color: var(--lightGrey);
+}
+
+/* End of Invest in HireHost */
+
+/* Footer */
+
+.footer-bottom-div {
+    position: relative;
+}
+
+.footer-nav-div {
+    position: relative;
+}
+
+.footer-bottom-inner-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.btm-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 25px;
+    position: relative;
+}
+
+.btm-nav-list .link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--greyColor);
+    font-family: var(--GeneralSansVariable);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    transition: all 0.8s;
+}
+
+.btm-nav-list .link:hover {
+    color: var(--primaryColor);
+}
+
+.copyright-div p {
+    color: var(--greyColor);
+    font-family: var(--GeneralSansVariable);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+}
+
+/* End of Footer */
+
+@media (max-width:1367px) {
+    .invest-img-root {
+        height: 450px;
+        width: 742px;
+        top: -80px;
+        margin: 0 0 -80px 0;
+    }
+}
+
+@media (max-width:1290px) {
+    .invest-hirehost-section {
+        --h88: 50px;
+    }
+
+    .invest-img-root {
+        height: 420px;
+        width: 692px;
+        top: -50px;
+        margin-bottom: -50px;
+    }
+
+    .invest-img-dv .img-fluid {
+        transform: scale(1);
+    }
+
+    @keyframes imgZoom {
+        0% {
+            transform: scale(1.02);
+        }
+
+        50% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.02);
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .invest-img-root {
+        height: 350px;
+        width: 562px;
+        top: -20px;
+        margin-bottom: -20px;
+    }
+
+    .invest-content-dv .desc-dv p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .invest-content-dv .desc-dv {
+        margin-bottom: 30px;
+    }
+
+    .invest-content-dv {
+        padding: 50px 0;
+        min-height: 330px;
+    }
+}
+
+@media (max-width:992px) {
+    .invest-img-root {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .invest-img-dv {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .invest-img-root {
+        right: -15px;
+    }
+
+    .invest-hirehost-section {
+        --h88: 0;
+        overflow: hidden;
+        background: linear-gradient(224deg, var(--primaryColor03) 11.65%, var(--primaryColor02) 89.63%);
+    }
+
+    .invest-hirehost-section::before {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .row.invest-row .grid-5 {
+        order: 2;
+    }
+
+    .row.invest-row .grid-7 {
+        order: 1;
+    }
+
+    .invest-img-root {
+        left: -15px;
+        right: 0;
+        width: calc(100% + 30px);
+    }
+
+    .invest-content-dv {
+        min-height: auto;
+    }
+
+    .btm-nav-list {
+        column-gap: 12px;
+    }
+
+    .btm-nav-list .link {
+        font-size: 13px;
+    }
+
+    .copyright-div p {
+        font-size: 13px;
+    }
+
+    .footer-bottom-inner-div {
+        padding: 10px 0;
+    }
+}
+
+
+@media (max-width:350px) {
+    .btm-nav-list .link {
+        font-size: 12px;
+    }
+
+    .btm-nav-list {
+        column-gap: 8px;
+    }
+}

@@ -1,0 +1,88 @@
+.form-group {
+    padding: 0;
+    margin: 0 0 26px;
+    position: relative;
+}
+
+.form-group label {
+    color: var(--blackColor03);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 0 5px;
+    display: block;
+}
+
+.form-group .form-control,
+.form-group .select-control {
+    background: var(--lightGrey02);
+    border: 1px solid var(--lightGrey02);
+    border-radius: 6px;
+    padding: 16px 20px;
+    color: var(--blackColor03);
+    font-family: var(--GeneralSansVariable);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+    color: var(--greyColor02);
+}
+
+.form-group .form-control::-moz-placeholder {
+    color: var(--greyColor02);
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    color: var(--greyColor02);
+}
+
+.form-group .form-control:-moz-placeholder {
+    color: var(--greyColor02);
+}
+
+.form-group .form-control:hover,
+.form-group .select-control:hover,
+.form-group .form-control:focus,
+.form-group .select-control:focus {
+    border-color: var(--greyColor02);
+}
+
+.form-group .select-control {
+    width: 100%;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7' fill='none'%3E%3Cpath d='M1.58982 0.274085L5.10727 3.82773L8.66092 0.310284C8.74571 0.226353 8.84621 0.159946 8.95667 0.114853C9.06712 0.0697609 9.18538 0.0468658 9.30469 0.0474765C9.424 0.0480873 9.54202 0.072192 9.65201 0.118413C9.762 0.164634 9.86181 0.232067 9.94574 0.316862C10.0297 0.401656 10.0961 0.502152 10.1412 0.612611C10.1863 0.72307 10.2092 0.841329 10.2085 0.960637C10.2079 1.07994 10.1838 1.19796 10.1376 1.30795C10.0914 1.41795 10.024 1.51776 9.93916 1.60169L5.73523 5.76279C5.6505 5.84683 5.55003 5.91334 5.43956 5.9585C5.32909 6.00366 5.2108 6.0266 5.09146 6.02599C4.97212 6.02538 4.85407 6.00123 4.74407 5.95494C4.63407 5.90865 4.53428 5.84112 4.45041 5.75622L0.289304 1.55229C0.205262 1.46755 0.138756 1.36708 0.0935937 1.25661C0.0484315 1.14614 0.0254998 1.02785 0.0261107 0.908509C0.0267217 0.789167 0.0508633 0.671118 0.0971542 0.561119C0.143445 0.451119 0.210976 0.351329 0.295881 0.267461C0.653031 -0.0769852 1.23626 -0.0831119 1.58982 0.274085Z' fill='%23222222'/%3E%3C/svg%3E");
+    background-size: 11px 7px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+.mobile-group .form-group-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+
+.mobile-group .select-control {
+    width: 75px;
+    background-position: 100% center;
+    padding-right: 15px;
+    border-radius: 6px 0 0 6px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    min-height: 54px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+.mobile-group .form-control {
+    width: 100%;
+    border-radius: 6px;
+    padding-left: 95px;
+}

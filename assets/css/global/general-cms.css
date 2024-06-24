@@ -1,0 +1,126 @@
+.general-content {
+    position: relative;
+}
+
+.general-content h1,
+.general-content h2,
+.general-content h3,
+.general-content h4,
+.general-content h5,
+.general-content h6,
+.general-content p,
+.general-content ul,
+.general-content ol {
+    color: var(--blackColor02);
+    margin-bottom: 10px;
+}
+
+.general-content p {
+    color: var(--blackColor02);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.general-content h3 {
+    margin-bottom: 20px;
+    color: var(--blackColor02);
+}
+
+.general-content blockquote {
+    padding: 50px 60px;
+    margin: 70px 0;
+    position: relative;
+    background-color: var(--lightGrey);
+    border-radius: 20px;
+}
+
+.general-content blockquote h3 {
+    margin: 10px 0;
+}
+
+.general-content blockquote h3 strong {
+    background: linear-gradient(270deg, #A962F2 31.12%, #6064F6 72.82%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: inherit;
+}
+
+.general-content ul {
+    color: var(--blackColor03);
+    font-family: var(--Inter);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.general-content ul li {
+    padding: 0 0 0 20px;
+    margin: 0 0 10px;
+    position: relative;
+    color: var(--blackColor03);
+    font-family: var(--Inter);
+}
+
+.general-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-image: linear-gradient(224deg, #AE61F1 11.65%, #5F63F5 89.63%);
+    border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+    .general-content blockquote {
+        padding: 30px 40px;
+        margin: 40px 0;
+    }
+}
+
+@media (max-width:992px) {
+    .general-content blockquote {
+        padding: 20px 30px;
+        margin: 30px 0;
+    }
+
+    .general-content blockquote h3 {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width:767px) {
+    .general-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .general-content h3 {
+        margin-bottom: 10px;
+    }
+
+    .general-content blockquote {
+        padding: 10px 20px;
+        margin: 20px 0;
+    }
+
+    .general-content ul {
+        font-size: 14px;
+    }
+
+    .general-content ul li::before {
+        top: 8px;
+        width: 6px;
+        height: 6px;
+    }
+
+    .general-content ul li {
+        padding: 0 0 0 14px;
+        margin: 0 0 8px;
+    }
+}
